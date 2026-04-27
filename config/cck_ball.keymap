@@ -96,7 +96,7 @@
         Nav {
             bindings = <
 &kp F12    &kp F1        &kp F2       &kp F3       &kp F4        &kp F5  &kp F6     &kp F7     &kp F8  &kp F9    &kp F10  &kp F11
-&trans     &LG(Q)        &kp N7       &kp N8       &kp N9        &trans  &trans     &trans     &trans  &trans    &trans   &trans
+&trans     &kp LG(Q)     &kp N7       &kp N8       &kp N9        &trans  &trans     &trans     &trans  &trans    &trans   &trans
 &kp TILDE  &mt LCTRL N0  &mt LALT N4  &mt LGUI N5  &mt LSHFT N6  &trans  &kp LEFT   &kp DOWN   &kp UP  &kp RIGHT &kp PIPE &trans
 &kp GRAVE  &kp LGUI      &kp N1       &kp N2       &kp N3        &none   &kp HOME   &kp END    &trans  &trans    &kp BSLH &trans
 &trans     &trans        &trans       &trans       &trans        &trans  &mkp LCLK  &mkp RCLK  &trans  &trans    &trans   &trans
