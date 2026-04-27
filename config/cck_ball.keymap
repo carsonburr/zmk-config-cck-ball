@@ -66,12 +66,12 @@
         combo_lbrk {
             timeout-ms = <50>;
             key-positions = <19 20>;
-            bindings = <&kp LBRK>;
+            bindings = <&kp LBKT>;
         };
         combo_rbrk {
             timeout-ms = <50>;
             key-positions = <20 21>;
-            bindings = <&kp RBRK>;
+            bindings = <&kp RBKT>;
         };
     };
 
