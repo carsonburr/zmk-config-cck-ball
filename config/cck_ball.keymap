@@ -91,7 +91,7 @@
 &kp LA(LEFT)     &kp LC(R)     &kp LA(RIGHT) &lt 1 ESC  &mt LSHFT BSPC  &lt 2 TAB     &mkp LCLK &kp SPACE &kp MINUS  &none           &none           &tog 3
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Nav_layer {
@@ -104,7 +104,7 @@
 &trans     &trans        &trans       &trans       &trans        &trans  &mkp LCLK  &mkp RCLK  &trans  &trans    &trans   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         BT_layers {
@@ -117,7 +117,7 @@
 &trans     &trans          &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         Gaming_layer {
@@ -130,7 +130,7 @@
 &none            &none         &none         &kp SPACE       &kp TAB    &kp M         &mkp LCLK &mkp RCLK &kp SPACE  &tog 3          &none           &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
     };
 };
