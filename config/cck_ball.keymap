@@ -37,8 +37,8 @@
 };
 
 &zip_temp_layer {
-    excluded-positions = <51 54 55 25 26 27 28>
-}
+    excluded-positions = <51 54 55 25 26 27 28>;
+};
 
 &soft_off { hold-time-ms = <2000>; };
 
