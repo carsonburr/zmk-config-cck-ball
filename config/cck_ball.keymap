@@ -12,6 +12,11 @@
 &soft_off { hold-time-ms = <2000>; };
 
 / {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors = <&zip_xy_scaler 3 1>;
+    };
     combos {
         compatible = "zmk,combos";
         combo_lpar {
