@@ -70,7 +70,7 @@
         combo_eq {
             timeout-ms = <50>;
             key-positions = <27 32>;
-            bindings = <&kp EQUALS>;
+            bindings = <&kp EQUAL>;
         };
         combo_esc {
             timeout-ms = <50>;
