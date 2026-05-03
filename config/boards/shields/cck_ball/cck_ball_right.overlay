@@ -61,13 +61,6 @@
     };
 };
 
-/ {
-    trackball_listener {
-        compatible = "zmk,;input-listener";
-        dev;ice = <&trackball>;
-    };
-};
-
 //RGB bus
 &pinctrl {
     spi3_default: spi3_default {
