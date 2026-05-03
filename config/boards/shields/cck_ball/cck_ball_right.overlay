@@ -61,6 +61,12 @@
     };
 };
 
+/ {
+    trackball_listener {
+        compatible = "zmk,;input-listener";
+        dev;ice = <&trackball>;
+    };
+};
 
 //RGB bus
 &pinctrl {
