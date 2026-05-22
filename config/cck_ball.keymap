@@ -27,49 +27,27 @@
     trigger-period-ms = <16>;
 };
 
+#define MY_COMBO(NAME, LAYERS, KEYS, BINDING) \
+  combo_##NAME {                              \
+    timeout-ms = <50>;                        \
+    layers = <LAYERS>;                        \
+    key-positions = <KEYS>;                   \
+    bindings = <&kp BINDING>;                 \
+  };
+
 / {
     combos {
         compatible = "zmk,combos";
-        combo_lpar {
-            timeout-ms = <50>;
-            key-positions = <31 32>;
-            bindings = <&kp LPAR>;
-        };
-        combo_rpar {
-            timeout-ms = <50>;
-            key-positions = <32 33>;
-            bindings = <&kp RPAR>;
-        };
-        combo_lbrc {
-            timeout-ms = <50>;
-            key-positions = <43 44>;
-            bindings = <&kp LBRC>;
-        };
-        combo_rbrc {
-            timeout-ms = <50>;
-            key-positions = <44 45>;
-            bindings = <&kp RBRC>;
-        };
-        combo_lbrk {
-            timeout-ms = <50>;
-            key-positions = <19 20>;
-            bindings = <&kp LBKT>;
-        };
-        combo_rbrk {
-            timeout-ms = <50>;
-            key-positions = <20 21>;
-            bindings = <&kp RBKT>;
-        };
-        combo_eq {
-            timeout-ms = <50>;
-            key-positions = <27 32>;
-            bindings = <&kp EQUAL>;
-        };
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <28 31>;
-            bindings = <&kp ESC>;
-        };
+        MY_COMBO(lpar, 0, 31 32, LPAR)
+        MY_COMBO(rpar, 0, 32 33, RPAR)
+        MY_COMBO(lt  , 1, 31 32, LPAR)
+        MY_COMBO(gt  , 1, 32 33, RPAR)
+        MY_COMBO(lbrc, 0, 43 44, LBRC)
+        MY_COMBO(rbrc, 0, 43 44, RBRC)
+        MY_COMBO(lbrk, 1, 43 44, LBRK)
+        MY_COMBO(rbrk, 1, 43 44, RBRK)
+        MY_COMBO(eq  , 0, 26 27, EQUAL)
+        MY_COMBO(esc , 0, 27 28, ESC)
     };
 
     behaviors {
@@ -92,7 +70,7 @@
 &kp C_PP   &kp N1    &kp N2  &kp N3     &kp N4          &kp N5       &kp N6     &kp N7     &kp N8     &kp N9   &kp N0   &kp DELETE
 &kp ESC    &kp Q     &kp W   &kp E      &kp R           &kp T        &kp Y      &kp U      &kp I      &kp O    &kp P    &kp EQUAL
 &kp LCTRL  &kp A     &kp S   &kp D      &kp F           &kp G        &kp H      &kp J      &kp K      &kp L    &kp SEMI &kp SQT
-&kp LALT   &kp Z     &kp X   &kp C      &kp V           &kp B        &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH &kp RIGHT
+&kp LALT   &kp Z     &kp X   &kp C      &kp V           &kp B        &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH &kp END
 &none      &kp LGUI  &none   &lt 1 RET  &mt LSHFT BSPC  &lt 2 TAB    &kp UNDER  &kp SPACE  &kp MINUS  &none    &none    &tog 4
             >;
 
