@@ -27,27 +27,69 @@
     trigger-period-ms = <16>;
 };
 
-#define MY_COMBO(NAME, LAYERS, KEYS, BINDING) \
-  combo_##NAME {                              \
-    timeout-ms = <50>;                        \
-    layers = <LAYERS>;                        \
-    key-positions = <KEYS>;                   \
-    bindings = <&kp BINDING>;                 \
-  };
-
 / {
     combos {
         compatible = "zmk,combos";
-        MY_COMBO(lpar, 0, 31 32, LPAR)
-        MY_COMBO(rpar, 0, 32 33, RPAR)
-        MY_COMBO(lt  , 1, 31 32, LPAR)
-        MY_COMBO(gt  , 1, 32 33, RPAR)
-        MY_COMBO(lbrc, 0, 43 44, LBRC)
-        MY_COMBO(rbrc, 0, 43 44, RBRC)
-        MY_COMBO(lbrk, 1, 43 44, LBRK)
-        MY_COMBO(rbrk, 1, 43 44, RBRK)
-        MY_COMBO(eq  , 0, 26 27, EQUAL)
-        MY_COMBO(esc , 0, 27 28, ESC)
+        combo_lpar {
+            timeout-ms = <50>;
+            layers = <0>;
+            key-positions = <31 32>;
+            bindings = <&kp LPAR>;
+        };
+        combo_rpar {
+            timeout-ms = <50>;
+            layers = <0>;
+            key-positions = <32 33>;
+            bindings = <&kp RPAR>;
+        };
+        combo_lt   {
+            timeout-ms = <50>;
+            layers = <1>;
+            key-positions = <31 32>;
+            bindings = <&kp LPAR>;
+        };
+        combo_gt   {
+            timeout-ms = <50>;
+            layers = <1>;
+            key-positions = <32 33>;
+            bindings = <&kp RPAR>;
+        };
+        combo_lbrc {
+            timeout-ms = <50>;
+            layers = <0>;
+            key-positions = <43 44>;
+            bindings = <&kp LBRC>;
+        };
+        combo_rbrc {
+            timeout-ms = <50>;
+            layers = <0>;
+            key-positions = <43 44>;
+            bindings = <&kp RBRC>;
+        };
+        combo_lbrk {
+            timeout-ms = <50>;
+            layers = <1>;
+            key-positions = <43 44>;
+            bindings = <&kp LBRK>;
+        };
+        combo_rbrk {
+            timeout-ms = <50>;
+            layers = <1>;
+            key-positions = <43 44>;
+            bindings = <&kp RBRK>;
+        };
+        combo_eq   {
+            timeout-ms = <50>;
+            layers = <0>;
+            key-positions = <26 27>;
+            bindings = <&kp EQUAL>;
+        };
+        combo_esc  {
+            timeout-ms = <50>;
+            layers = <0>;
+            key-positions = <27 28>;
+            bindings = <&kp ESC>;
+        };
     };
 
     behaviors {
