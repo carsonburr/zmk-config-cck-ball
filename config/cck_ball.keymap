@@ -46,7 +46,7 @@
         MY_COMBO(rbrk, 1  , 44 45, RBKT)
         MY_COMBO(lbrc, 0  , 43 44, LBRC)
         MY_COMBO(rbrc, 0  , 44 45, RBRC)
-        MY_COMBO(eq  , 0  , 26 27, EQUAL)
+        MY_COMBO(eq  , 0  , 39 40, EQUAL)
         MY_COMBO(plus, 0 1, 38 39, PLUS)
         MY_COMBO(esc , 0  , 27 28, ESC)
     };
@@ -81,11 +81,11 @@
         Nav_layer {
             display-name = "Nav layer";
             bindings = <
-&kp F12    &kp F1        &kp F2       &kp F3       &kp F4        &kp F5  &kp F6       &kp F7       &kp F8       &kp F9    &kp F10  &kp F11
-&trans     &kp LG(Q)     &kp N7       &kp N8       &kp N9        &trans  &trans       &kp INSERT   &kp DELETE   &trans    &trans   &trans
-&kp LCTRL  &hm LCTRL N0  &hm LALT N4  &hm LGUI N5  &hm LSHFT N6  &trans  &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT &kp PIPE &kp TILDE
-&kp LALT   &kp LGUI      &kp N1       &kp N2       &kp N3        &trans  &kp HOME     &kp END      &trans       &trans    &kp BSLH &kp GRAVE
-&trans     &trans        &trans       &trans       &trans        &trans  &lt 3 UNDER  &kp SPACE    &kp MINUS    &trans    &trans   &trans
+&kp F12    &kp F1        &kp F2       &kp F3       &kp F4        &kp F5         &kp F6       &kp F7       &kp F8       &kp F9    &kp F10  &kp F11
+&trans     &kp LG(Q)     &kp N7       &kp N8       &kp N9        &kp LC(LA(T))  &trans       &kp INSERT   &kp DELETE   &trans    &trans   &trans
+&kp LCTRL  &hm LCTRL N0  &hm LALT N4  &hm LGUI N5  &hm LSHFT N6  &trans         &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT &kp PIPE &kp TILDE
+&kp LALT   &kp LGUI      &kp N1       &kp N2       &kp N3        &trans         &kp HOME     &kp END      &trans       &trans    &kp BSLH &kp GRAVE
+&trans     &trans        &trans       &trans       &trans        &trans         &lt 3 UNDER  &kp SPACE    &kp MINUS    &trans    &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -97,7 +97,7 @@
 &trans    &trans &trans &trans &trans      &trans   &trans &trans         &trans         &trans          &trans       &trans
 &trans    &trans &trans &trans &trans      &trans   &trans &trans         &mmv MOVE_UP   &trans          &trans       &trans
 &kp LCTRL &trans &trans &trans &kp LS(TAB) &trans   &trans &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_UP &trans
-&kp LALT  &trans &trans &trans &trans      &trans   &trans &msc SCRL_DOWN &kp C_VOL_UP   &kp C_VOL_UP    &trans       &trans
+&kp LALT  &trans &trans &trans &trans      &trans   &trans &msc SCRL_DOWN &kp C_VOL_DN   &kp C_VOL_UP    &trans       &trans
 &trans    &trans &trans &trans &trans      &trans   &trans &mkp LCLK      &mkp RCLK      &trans          &trans       &trans
             >;
 
